@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se - Freela Vale</title>
+    <link rel="stylesheet" href="/Assets/css/style.css"> <link rel="stylesheet" href="/Assets/css/forms.css"> </head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-area">
+                <img src="/Assets/imgs/ChatGPT Image 28 de mai. de 2025, 22_54_30.png" alt="Logo Freela Vale" class="logo-img">
+                <h1>Freela Vale</h1>
+                <p class="slogan">Conectando contratadores reais a pessoas reais</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/FrontEnd/index.html">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="signup.html" class="active">Signup</a></li>
+                    <li><a href="login.html" class="login-button">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-page-container">
+        <div class="form-container">
+            <h2>Crie sua Conta na Freela Vale</h2>
+            <form action="/processar-cadastro" method="POST"> <fieldset class="account-type">
+                    <legend>Eu sou:</legend>
+                    <div>
+                        <input type="radio" id="cliente" name="accountType" value="cliente" required>
+                        <label for="cliente">Cliente (Quero contratar)</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="freelancer" name="accountType" value="freelancer" required>
+                        <label for="freelancer">Freelancer (Quero trabalhar)</label>
+                    </div>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="fullName">Nome Completo:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required minlength="8">
+                    <small>Mínimo de 8 caracteres, incluindo letras e números.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">Confirme a Senha:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+
+                <div class="form-group terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Li e aceito os <a href="/termos-de-servico" target="_blank">Termos de Serviço</a> e a <a href="/politica-de-privacidade" target="_blank">Política de Privacidade</a>.</label>
+                </div>
+
+                <button type="submit" class="form-button">Cadastrar</button>
+            </form>
+            <p class="form-link">Já tem uma conta? <a href="login.html">Entrar</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freela Vale. Todos os direitos reservados.</p>
+            <p>
+                <a href="#">Sobre Nós</a> |
+                <a href="#">Contato</a> |
+                <a href="#">Termos de Serviço</a> |
+                <a href="#">Política de Privacidade</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

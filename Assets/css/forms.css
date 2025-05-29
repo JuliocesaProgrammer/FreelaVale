@@ -1,0 +1,178 @@
+/* CSS para Páginas de Formulário (forms.css) */
+
+.form-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f4f7f6; /* Um fundo suave para a área do formulário */
+    min-height: calc(100vh - 160px); /* Ajuste conforme altura do header/footer */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 480px; /* Largura máxima do container do formulário */
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #1D3557; /* Cor principal do tema */
+    margin-bottom: 25px;
+    font-size: 1.8em;
+}
+
+.form-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label,
+.account-type legend {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    border-color: #457B9D; /* Cor de destaque no foco */
+    outline: none;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8em;
+    color: #777;
+}
+
+.account-type div {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.account-type input[type="radio"]{
+    margin-right: 8px;
+    accent-color: #457B9D;
+}
+.account-type label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+
+.form-group.terms {
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.form-group.terms input[type="checkbox"] {
+    margin-right: 10px;
+    accent-color: #457B9D;
+}
+
+.form-group.terms label {
+    font-weight: normal;
+    margin-bottom: 0; /* Reset margin for label within this group */
+}
+
+.form-group.terms a {
+    color: #457B9D;
+    text-decoration: none;
+}
+.form-group.terms a:hover {
+    text-decoration: underline;
+}
+
+.form-group-inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.9em;
+}
+.form-group-inline div { /* Para o "Lembrar-me" */
+    display: flex;
+    align-items: center;
+}
+.form-group-inline input[type="checkbox"] {
+    margin-right: 5px;
+    accent-color: #457B9D;
+}
+.form-group-inline label {
+    font-weight: normal;
+    margin-bottom: 0;
+}
+
+.forgot-password-link {
+    color: #457B9D;
+    text-decoration: none;
+}
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+
+.form-button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #E63946; /* Cor de destaque do tema */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #D62828; /* Um tom mais escuro para o hover */
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95em;
+}
+
+.form-link a {
+    color: #457B9D;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-link a:hover {
+    text-decoration: underline;
+}
+
+/* Adicione uma classe 'active' no CSS para o item do menu da página atual */
+nav ul li a.active {
+    /* color: #E63946; */ /* Exemplo, se quiser destacar diferente */
+    font-weight: bolder;
+    border-bottom: 2px solid #E63946; /* Ou outra forma de destaque */
+}

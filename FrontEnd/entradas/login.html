@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Freela Vale</title>
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <link rel="stylesheet" href="/Assets/css/forms.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-area">
+                <img src="/Assets/imgs/ChatGPT Image 28 de mai. de 2025, 22_54_30.png" alt="Logo Freela Vale" class="logo-img">
+                <h1>Freela Vale</h1>
+                <p class="slogan">Conectando contratadores reais a pessoas reais</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/FrontEnd/index.html">Home</a></li>
+                    <li><a href="#">Browse</a></li>
+                    <li><a href="signup.html">Signup</a></li>
+                    <li><a href="login.html" class="active login-button">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-page-container">
+        <div class="form-container">
+            <h2>Acesse sua Conta</h2>
+            <form action="/processar-login" method="POST"> <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <div class="form-group-inline">
+                    <div>
+                        <input type="checkbox" id="rememberMe" name="rememberMe">
+                        <label for="rememberMe">Lembrar-me</label>
+                    </div>
+                    <a href="forgot-password.html" class="forgot-password-link">Esqueci minha senha</a>
+                </div>
+
+                <button type="submit" class="form-button">Entrar</button>
+            </form>
+            <p class="form-link">Ainda não tem uma conta? <a href="signup.html">Cadastre-se</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Freela Vale. Todos os direitos reservados.</p>
+            <p>
+                <a href="#">Sobre Nós</a> |
+                <a href="#">Contato</a> |
+                <a href="#">Termos de Serviço</a> |
+                <a href="#">Política de Privacidade</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
